@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<center>
+<div class="medio">
+<%= render @producto3 %>
+
+<div>
+  <%= link_to "Editar este producto", edit_producto3_path(@producto3) %> |
+  <%= link_to "Volver atrás", producto3s_path %>
+
+  <br /><br />
+
+  <%= button_to "Eliminar este producto", @producto3, method: :delete %>
+</div>
+
+</div>
+</center>

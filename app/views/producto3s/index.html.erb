@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="medio">Aplicación de productos</h1>
+
+<div id="producto3s" class="medio">
+  <% @producto3s.each do |producto3| %>
+    <%= render producto3 %>
+    <p>
+      <%= link_to "Mostrar este producto", producto3 %>
+      <hr />
+    </p>
+  <% end %>
+</div>
+
+<center><%= link_to "Crear nuevo producto", new_producto3_path %></center>
