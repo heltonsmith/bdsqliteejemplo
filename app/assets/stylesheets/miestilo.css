@@ -8,3 +8,22 @@
     margin-bottom: 20px !important;
     padding: 20px;
 }
+
+.botonaccion{
+    background-color: red;
+    width: 400px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.grande{
+    font-size: 33px;
+}
+
+.otraclase{
+    color: green;
+}
+
+.blanco{
+    color: white;
+}

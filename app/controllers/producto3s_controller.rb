@@ -13,10 +13,12 @@ class Producto3sController < ApplicationController
   # GET /producto3s/new
   def new
     @producto3 = Producto3.new
+    @boton = "Guardar nuevo producto"
   end
 
   # GET /producto3s/1/edit
   def edit
+    @boton = "Editar producto"
   end
 
   # POST /producto3s or /producto3s.json
@@ -32,10 +34,12 @@ class Producto3sController < ApplicationController
         format.json { render json: @producto3.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /producto3s/1 or /producto3s/1.json
   def update
+
     respond_to do |format|
       if @producto3.update(producto3_params)
         format.html { redirect_to producto3_url(@producto3), notice: "Producto actualizado correctamente" }
